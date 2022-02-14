@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" href="favicon.ico" type="image/ico">
+<title>Marcin Ciura</title>
+<style>
+body,button {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16pt;
+}
+body {
+  background-color: #000;
+  color: #FF8;
+  float: left;
+  line-height: 1.4;
+  padding: 0 .5em .5em;
+  margin: 0 auto;
+  max-width: 60ex;
+}
+center {
+  width: 60ex;
+}
+a {
+  color: #88F;
+  target: "_blank";
+}
+button {
+  background-color: #C90;
+  color: #000;
+  border-radius: 10px;
+  padding: .25em .5em .25em;
+  margin: .25em;
+}
+h1,h3,pre,ul {
+  color: #C90;
+}
+pre {
+  padding-left: 2em;
+}
+.przyciski {
+  text-align: center;
+}
+.red {
+  background-color: #D00;
+}
+.green {
+  background-color: #060;
+}
+</style>
+<script>
+function choose(n) {
+  var i;
+  var c = document.getElementById("części").children;
+  for (i = 0; i < c.length; i++) {
+    if (i === n) {
+      c[i].style.display =
+            {"block": "none", "none": "block"}[c[i].style.display];
+    } else {
+      c[i].style.display = "none";
+    }
+  }
+}
+</script>
+</head>
+<body>
+<center>
+<h1>Marcin Ciura</h1>
+<h3>Ojciec i programista</h3>
+
+<div id="przyciski">
+<button onclick="choose(0)"><b>Programista</b></button>
+<button onclick="choose(1)"><b>Nauczyciel</b></button>
+<button onclick="choose(2)"><b>Hobbysta</b></button>
+<button onclick="choose(3)"><b>Kontakt ze mną</b></button>
+</div>
+</center>
+
+<div id="części">
+<div style="display:none">
+<p>Jestem zawodowym programistą od&nbsp;ponad 20&nbsp;lat.
+Zacząłem pracę od&nbsp;urządzenia podobnego do&nbsp;dzisiejszych pendrive’ów:
+czytnika kart PCMCIA (mieściły aż&nbsp;512&nbsp;KB danych),
+dla którego napisałem wewnętrzny program i&nbsp;sterownik na&nbsp;peceta.</p>
+
+<p>Przez osiem lat pracy w&nbsp;Google uczyłem się
+projektować, implementować, testować, wdrażać i&nbsp;utrzymywać
+systemy:
+<ul>
+<li>śledzące obciążenie komputerów w&nbsp;centrach danych</li>
+<li>wykonujące rozproszone obliczenia statystyczne</li>
+<li>rekomendujące filmy i&nbsp;seriale</li>
+</ul>
+Jeszcze ważniejsze jest to, że uczyłem się pracy w&nbsp;zespole.
+Kiedy&nbsp;zamknięto oddział Google w&nbsp;Krakowie,
+wolałem tu&nbsp;zostać
+niż&nbsp;wyjeżdżać do&nbsp;pracy w&nbsp;innym oddziale.</p>
+
+<p>W&nbsp;innych firmach współpracowałem
+między innymi przy pisaniu programów&nbsp;do:
+<ul>
+<li>obsługi bezrobotnych w&nbsp;urzędach pracy</li>
+<li>tłumaczenia z&nbsp;polskiego na&nbsp;rosyjski
+i&nbsp;z&nbsp;rosyjskiego na&nbsp;polski</li>
+<li>dobierania reklam i&nbsp;rekomendacji dla&nbsp;użytkowników (dwa&nbsp;razy)</li>
+<li>wybierania najciekawszych klatek filmów</li>
+</ul>
+
+<p>Umiem programować w:
+<ul>
+<li>C</li>
+<li>C++</li>
+<li>Javie</li>
+<li>SQL-u</li>
+<li>Borgmonie &ndash; to&nbsp;język monitorowania w&nbsp;Google,
+którego otwartą wersją jest
+<a target="_blank"
+href="https://prometheus.io/">Prometheus</a></li>
+<li>Pythonie &ndash; używam go od&nbsp;kilkunastu&nbsp;lat, ale</li>
+<li>Go to język programowania, który lubię najbardziej.</li>
+</ul>
+</p>
+</div>
+
+<div style="display:none">
+<p>Dawno temu na&nbsp;mojej macierzystej
+Politechnice Śląskiej prowadziłem:
+<ul>
+<li>Wykłady podstaw programowania w&nbsp;Pascalu i&nbsp;w&nbsp;Pythonie</li>
+<li>Wykład i&nbsp;ćwiczenia z&nbsp;analizy algorytmów</li>
+<li>Laboratorium programowania w&nbsp;C&nbsp;i&nbsp;C++</li>
+<li>Seminarium rozwiązywania problemów programistycznych
+dla&nbsp;ambitnych studentów</li>
+</ul></p>
+
+<p>W 2020 roku prowadziłem na&nbsp;Politechnice Krakowskiej:
+<ul>
+<li>Wykład i&nbsp;laboratorium przetwarzania języka naturalnego
+(tu&nbsp;są&nbsp;<a target="_blank" href="https://github.com/PK-PJN">zadania laboratoryjne w&nbsp;Pythonie</a>)</li>
+<li>Laboratorium programowania w&nbsp;Pythonie,
+którego owocem jest tekst
+<a target="_blank"
+   href="https://github.com/MarcinCiura/O-dobrym-programowaniu-w-Pythonie"><i>O&nbsp;dobrym
+programowaniu w&nbsp;Pythonie</i></a>
+przeznaczony dla&nbsp;początkujących i&nbsp;średnio zaawansowanych pytonistów</li>
+</ul>
+</a></p>
+</div>
+
+<div style="display:none">
+<p>Prezentuję tu kilka zabawnych programów,
+które kiedyś napisałem.
+Tak się składa, że&nbsp;wszystkie dotyczą  
+mojej ulubionej dziedziny:
+przetwarzania języka naturalnego.</p>
+
+<p>Program Centonista przy każdym uruchomieniu pisze zupełnie nowy wiersz,
+na&nbsp;przykład taki:</p>
+
+<pre>
+Wiadomości z Europy, naokoło potopy
+już korzystał zapewne ojczulek.
+Splugawiony zaułek, bezimienny przytułek
+zwierz na ziemi nadzieja że Lulek.
+
+Okrucieństwa tyranów, monologu Szamanów.
+Stały na nich zwrócone na szybę.
+Rewolucją istotną, pozostała samotną
+by takiego i całą zeribę.
+
+Posłuszeństwo potworny, szampańskiego wybornej
+grzecznie ale wysoki dragoński.
+Zasunęła za plecy, przeraźliwy kobiecy
+młody przyszedł i pan Lanckoroński.
+</pre>
+
+<p>Tutaj jest jego kod źródłowy:
+<a target="_blank" href="https://github.com/turniej/centonista">Centonista (Github)</a>,
+a&nbsp;tutaj można go uruchomić bez&nbsp;instalowania:
+<a target="_blank" href="http://turniej.wolnelektury.pl/poezja/centonista/">Centonista (Wolne Lektury)</a></p>
+
+<p>Dwa razy brałem udział w&nbsp;<a target="_blank"
+href="https://www.ioccc.org/">The International
+Obfuscated C Code Contest</a>, czyli konkursie na&nbsp;najmniej
+czytelny program napisany&nbsp;w&nbsp;C.</p>
+
+<p>Pierwszy z&nbsp;moich programów, dość przydatny jak&nbsp;na&nbsp;IOCCC,
+zaznacza stronę bierną w&nbsp;tekstach angielskich, na przykład:</p>
+
+<pre>
+"The Elements of Style" by prof. William
+Strunk, Jr. and E. B. White <span class="red">[is well known]</span>
+for its dislike of the passive voice.
+Direct, vigorous, active constructions
+<span class="red">[were instead recommended]</span> by the authors.
+The development of this program has <span class="red">[been
+driven]</span> by this tenet.
+</pre>
+
+<p>Drugi program znajduje pangramy, czyli zdania,
+które zawierają wszystkie litery danego języka, na&nbsp;przykład:<br>
+<pre>
+Quartz jinx vs fed kc womb glyph</li>
+Stróż pchnął kość w quiz gędźb vel fax myjń</li>
+</pre>
+Tutaj są ich kody źródłowe:
+<a target="_blank"
+href="https://github.com/ioccc-src/winner/tree/master/2018/ciura">2018&nbsp;Ciura (Github)</a>,
+<a target="_blank"
+href="https://github.com/ioccc-src/winner/tree/master/2019/ciura">2019&nbsp;Ciura (Github)</a></p>
+
+<p>Startowałem też w&nbsp;całkiem poważnym konkursie,
+poświęconym zapobieganiu mowie nienawiści:
+<a target="_blank" href="http://2019.poleval.pl/">POLEVAL&nbsp;2019</a>.
+Program Przetak wykrywa teksty z&nbsp;wulgarnymi wyrazami.
+Na przykład tekst z&nbsp;wyrazami
+<tt class="red">dupa</tt><tt> </tt>
+<tt class="red">doopy</tt><tt> </tt>
+<tt class="red">d00p1e</tt><tt> </tt>
+<tt class="red">dd*óó*pp*ąą</tt><tt> </tt>
+<tt class="red">d 0 p e</tt>
+Przetak uznaje za&nbsp;nieodpowiedni, ale wyraz
+<tt class="green">Hadoopa</tt>
+przepuszcza.</p>
+
+<p>Proszę mi wybaczyć brzydkie słowo w&nbsp;przykładach.
+Chociaż Przetak zna dużo brzydsze słowa,
+w&nbsp;kodzie źródłowym ich nie&nbsp;widać:
+<a target="_blank" href="https://github.com/MarcinCiura/przetak">Przetak&nbsp;(Github)</a></p>
+</div>
+
+<div style="display:none">
+<p>Mieszkam w&nbsp;Krakowie.
+Preferuję kontakt emailowy pod adresem<br>
+<pre>ｍｃｉｕｒａ＠ｇｍａｉｌ．ｃｏｍ</pre></p>
+</div>
+</div>
+<pre margin-top="10em">&nbsp;</pre>
+</body>
