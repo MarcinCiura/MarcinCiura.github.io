@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="icon" href="favicon.ico" type="image/ico">
-<title>dr inż. Marcin Ciura</title>
+<title>Marcin Ciura</title>
 <style>
 body,button {
   font-family: Helvetica, Arial, sans-serif;
@@ -41,12 +41,17 @@ pre {
 .przyciski {
   text-align: center;
 }
-.red {
-  background-color: #D00;
-  color: #000
+.hilite {
+  background-color: #400;
 }
 .green {
   background-color: #060;
+}
+.big {
+  font-size: 2.5em;
+}
+.medium {
+  font-size: 1.7em;
 }
 </style>
 <script>
@@ -65,46 +70,50 @@ function choose(n) {
 </script>
 </head>
 <body>
-<center>
-<h1>dr inż. Marcin Ciura</h1>
-
-<div id="przyciski">
-<button onclick="choose(0)"><b>Programista</b></button>
-<button onclick="choose(1)"><b>Naukowiec</b></button>
-<button onclick="choose(2)"><b>Hobbysta</b></button>
-<button onclick="choose(3)"><b>Kontakt</b></button>
-</div>
-</center>
+  <center>
+    <p></p>
+    <img src="Dinozaur.jpg"/><br>
+    <span class="big">Marcin Ciura</span><br>
+    <span class="medium">ojciec i programista</span>
+    <div id="przyciski">
+      <button onclick="choose(0)"><b>Programista</b></button>
+      <button onclick="choose(1)"><b>Naukowiec</b></button>
+      <button onclick="choose(2)"><b>Nauczyciel</b></button>
+      <button onclick="choose(3)"><b>Hobbysta</b></button>
+      <button onclick="choose(4)"><b>Kontakt</b></button>
+    </div>
+  </center>
 
 <div id="części">
 <div style="display:none">
-<p>Jestem zawodowym programistą od&nbsp;ponad 20&nbsp;lat.
-Zacząłem pracę od&nbsp;urządzenia podobnego do&nbsp;dzisiejszych pendrive’ów:
-czytnika kart PCMCIA (mieściły „aż”&nbsp;512&nbsp;KB danych!),
-dla którego napisałem wewnętrzny program i&nbsp;sterownik na&nbsp;peceta.</p>
+<p>Zacząłem pracować jako programista w&nbsp;1998&nbsp;roku.
+  Napisałem wtedy wewnętrzny program i&nbsp;sterownik na&nbsp;peceta
+  dla&nbsp;urządzenia podobnego do&nbsp;dzisiejszych pendrive’ów:
+  czytnika kart PCMCIA. Karty PCMCIA mieściły „aż”&nbsp;512&nbsp;KB danych!
+</p>
 
-<p>Przez osiem lat pracy w&nbsp;krakowskim oddziale firmy Google uczyłem się
-projektować, implementować, testować, wdrażać i&nbsp;utrzymywać
-systemy:
+<p>Przez osiem pracowałem w&nbsp;krakowskim oddziale firmy Google.
+  Tam uczyłem się projektować, implementować, testować, wdrażać i&nbsp;utrzymywać
+systemy, które:
 <ul>
-<li>śledzące obciążenie komputerów w&nbsp;centrach danych</li>
-<li>wykonujące rozproszone obliczenia statystyczne</li>
-<li>rekomendujące filmy i&nbsp;seriale</li>
+<li>śledziły obciążenie komputerów w&nbsp;centrach danych</li>
+<li>wykonywały rozproszone obliczenia statystyczne</li>
+<li>polecały użytkownikom filmy i&nbsp;seriale</li>
 </ul></p>
 
 <p>W&nbsp;innych firmach współpracowałem
-między innymi przy pisaniu programów&nbsp;do:
+między innymi przy pisaniu programów, które:
 <ul>
-<li>obsługi bezrobotnych w&nbsp;urzędach pracy</li>
-<li>tłumaczenia z&nbsp;polskiego na&nbsp;rosyjski
+<li>pomagały obsługiwać bezrobotnych w&nbsp;urzędach pracy</li>
+<li>tłumaczyły z&nbsp;polskiego na&nbsp;rosyjski
 i&nbsp;z&nbsp;rosyjskiego na&nbsp;polski</li>
-<li>dobierania reklam i&nbsp;rekomendacji dla&nbsp;użytkowników (dwa&nbsp;razy)</li>
-<li>wybierania najciekawszych klatek filmów</li>
+<li>dopasowywały reklamy i&nbsp;rekomendacje do&nbsp;użytkowników (dwa&nbsp;razy)</li>
+<li>wybierały najciekawsze klatki filmów</li>
 </ul></p>
 
-<p>Umiem programować w&nbsp;wielu językach.
-Od kilkunastu lat używam Pythona,
-ale najbardziej przypadł mi do gustu język&nbsp;Go.</p>
+<p>Umiem programować w&nbsp;kilku językach.
+Od kilkunastu lat używam Pythona.
+Najbardziej lubię język&nbsp;Go.</p>
 
 <p>Na GitHubie można znaleźć moduł mojego autorstwa,
   który umożliwia korzystanie w&nbsp;języku&nbsp;Go
@@ -113,55 +122,53 @@ ale najbardziej przypadł mi do gustu język&nbsp;Go.</p>
   <a target="_blank"
      href="https://github.com/go-morfeusz/morfeusz">go-morfeusz (GitHub)</a></p>
 
-<p>W 2019 roku wziąłem udział w&nbsp;konkursie,
-poświęconym zapobieganiu mowie nienawiści:
-<a target="_blank" href="http://2019.poleval.pl/">POLEVAL&nbsp;2019</a>.
-Mój program Przetak, który zajął drugie miejsce,
-wykrywa teksty z&nbsp;wulgarnymi wyrazami.
-Chociaż Przetak zna wiele brzydkich słów,
-w&nbsp;kodzie źródłowym ich nie&nbsp;widać:
-<a target="_blank" href="https://github.com/MarcinCiura/przetak">Przetak&nbsp;(Github)</a></p>
+<p>W 2019 roku wziąłem udział w&nbsp;konkursie
+  <a target="_blank" href="http://2019.poleval.pl/">POLEVAL</a>.
+  Mój program Przetak zajął 2.&nbsp;miejsce
+  wśród 14&nbsp;programów, które wykrywają mowę nienawiści.
+  Przetak wykrywa teksty z&nbsp;obraźliwymi i&nbsp;wulgarnymi wyrazami.
+  Chociaż Przetak zna wiele brzydkich słów,
+  w&nbsp;kodzie źródłowym ich nie&nbsp;widać:
+  <a target="_blank" href="https://github.com/MarcinCiura/przetak">Przetak&nbsp;(Github)</a></p>
 </div>
 
 <div style="display:none">
-  <p>Interesuje mnie algorytmika, programowanie gier planszowych
-    i&nbsp;przetwarzanie języka naturalnego.</p>
-  <p>Mój indeks Hirscha wynosi&nbsp;5.
-    Zawdzięczam go następującym artykułom:
+  <p>Interesuję się algorytmiką, programowaniem gier planszowych
+    i&nbsp;przetwarzaniem języka naturalnego.</p>
+  <p>Wyniki moich badań nad sortowaniem Shella można znaleźć w&nbsp;III&nbsp;tomie
+    <a target="_blank" href="all3-prepre.pdf#page=30">The Art of
+    Computer Programming</a> Donalda Knutha (strony 95&nbsp;i&nbsp;623).</p>
+  <p>Mój indeks Hirscha wynosi&nbsp;5 dzięki tym artykułom:
 <ul>
-  <li>107 cytowań: DEOROWICZ, Sebastian; CIURA, Marcin G.
+  <li>107 cytowań: Deorowicz, Sebastian; Ciura, Marcin G.
     Correcting spelling errors by modelling their causes.
     <i>International Journal of Applied Mathematics and Computer
       Science</i>, 2005, 15.2: 275-285.</li>
-  <li>46 cytowań: CIURA, Marcin G.; DEOROWICZ, Sebastian.
+  <li>46 cytowań: Ciura, Marcin G.; Deorowicz, Sebastian.
     How to squeeze a lexicon.
     <i>Software: Practice and Experience</i>, 2001, 31.11:
         1077-1090.</li>
-  <li>29 cytowań: CIURA, Marcin.
+  <li>29 cytowań: Ciura, Marcin.
     Best increments for the average case of Shellsort. In:
     <i>International Symposium on Fundamentals of Computation
       Theory</i>.
     Springer, Berlin, Heidelberg, 2001: 106-117.</li>
-  <li>12 cytowań: CIURA, Marcin, et al.
+  <li>12 cytowań: Ciura, Marcin, et al.
     A System to Adapt Techniques of Text Summarizing to Polish. In:
     <i>International Conference on Computational Intelligence</i>
     2004: 117-120.</li>
-  <li>10 cytowań: CIURA, Marcin; DEOROWICZ, Sebastian.
+  <li>10 cytowań: Ciura, Marcin; Deorowicz, Sebastian.
     Experimental study of finite automata storing static lexicons.
     Technical Report, Silesian University of Technology, 1999.</li>
 </ul></p>
-
 <p>W&nbsp;<a target="_blank"
-             href="https://scholar.google.com/scholar?hl=pl&q=%22Marcin+Ciura%22">Google
-    Scholar</a> można znaleźć pełną listę
-  recenzowanych artykułów mojego autorstwa.</p>
+             href="https://scholar.google.com/scholar?hl=pl&q=%22Marcin+Ciura%22">Google Scholar</a> można znaleźć
+  wszystkie artykuły, które napisałem.</p>
+</div>
 
-<p>Wyniki moich badań nad sortowaniem Shella można znaleźć w&nbsp;III&nbsp;tomie
-  <a target="_blank" href="all3-prepre.pdf#page=30"><i>The Art of
-  Computer Programming</i></a> Donalda Knutha (strony 95&nbsp;i&nbsp;623).</p>
-
-<p>Dawno temu na&nbsp;mojej macierzystej
-Politechnice Śląskiej prowadziłem:
+<div style="display:none">
+<p>Prowadziłem na&nbsp;swojej macierzystej uczelni,
+czyli na Politechnice Śląskiej:
 <ul>
 <li>Wykłady z&nbsp;podstaw programowania w&nbsp;Pascalu i&nbsp;w&nbsp;Pythonie</li>
 <li>Wykład i&nbsp;ćwiczenia z&nbsp;analizy algorytmów</li>
@@ -177,41 +184,41 @@ dla&nbsp;ambitnych studentów</li>
 <li>Laboratorium programowania w&nbsp;Pythonie,
 którego owocem jest tekst
 <a target="_blank"
-   href="https://github.com/MarcinCiura/O-dobrym-programowaniu-w-Pythonie"><i>O&nbsp;dobrym
-programowaniu w&nbsp;Pythonie</i></a>
+   href="https://github.com/MarcinCiura/O-dobrym-programowaniu-w-Pythonie">O&nbsp;dobrym
+programowaniu w&nbsp;Pythonie</a>
 przeznaczony dla&nbsp;początkujących i&nbsp;średnio zaawansowanych pytonistów</li>
 </ul>
 </p>
 
 <p>W 2023 roku prowadziłem na&nbsp;Akademii Górniczo-Hutniczej
-laboratorium z systemów operacyjnych.
+laboratorium systemów operacyjnych.
 Tu&nbsp;są&nbsp;<a target="_blank"
   href="https://github.com/MarcinCiura/AGH-SystemyOperacyjne">notatki
-do&nbsp;zajęć</a>.</p>
+do&nbsp;zajęć</a>, w&nbsp;tym do krótkiego wykładu o&nbsp;historii Unixa.</p>
 </div>
 
 <div style="display:none">
-<p>Pisałem kiedyś bloga po angielsku poświęconego różnym różnościom,
-w&nbsp;tym wizualizacji informacji
-i&nbsp;zabawnym zastosowaniom przetwarzania języka naturalnego.
-Oto&nbsp;on: <a target="_blank" href="https://marcinciura.wordpress.com/">marcinciura.wordpress.com</a></p>
-
-<p>Poniżej przedstawiam kilka programów,
-  które napisałem dla rozrywki.</p>
+<p>Piszę po angielsku blog o&nbsp;różnych tematach,
+  w&nbsp;tym o&nbsp;wizualizacji danych
+  i&nbsp;o&nbsp;zabawnych zastosowaniach przetwarzania języka naturalnego:
+  <a target="_blank"
+  href="https://marcinciura.wordpress.com/">marcinciura.wordpress.com</a></p>
+<p>Piszę po polsku blog o&nbsp;słowach: <a target="_blank"
+  href="https://oslowach.wordpress.com/">oslowach.wordpress.com</a></p>
+<p>Poniżej opisuję kilka programów, które napisałem dla rozrywki.</p>
 
 <p>Program
   <a target="_blank"
      href="https://github.com/MarcinCiura/lajkonik">Lajkonik (GitHub)</a>
-  ograł w&nbsp;grę planszową Havannah jej wynalazcę Christiana Freelinga,
-  czym przyniósł mnie i&nbsp;Piotrowi Wieczorkowi 500&nbsp;euro zysku&nbsp;:-)</p>
+  ograł w&nbsp;grę planszową Havannah jej twórcę Christiana Freelinga.
+  Dzięki temu wraz z&nbsp;Piotrem Wieczorkiem wygrałem od Christiana 500&nbsp;euro.&nbsp;:-)</p>
 
-<p>W Comprehensive TeX Archive Network można znaleźć
-  napisany przeze mnie pakiet do LaTeX-a,
-  który umożliwia składanie diagramów gier Havannah i&nbsp;Hex:
+<p>W Comprehensive TeX Archive Network można znaleźć pakiet makr,
+  które umożliwiają składanie diagramów gier Havannah i&nbsp;Hex w&nbsp;LaTeX&#8209;u:
   <a target="_blank" href="https://www.ctan.org/pkg/havannah">havannah (CTAN)</a>
 
-<p>Program Centonista przy każdym uruchomieniu pisze zupełnie nowy wiersz,
-  na&nbsp;przykład taki:</p>
+<p>Program Centonista za każdym razem, kiedy się wykonuje,
+  pisze zupełnie nowy wiersz, na&nbsp;przykład taki:</p>
 
 <pre>
 Wiadomości z Europy, naokoło potopy
@@ -230,26 +237,27 @@ Zasunęła za plecy, przeraźliwy kobiecy
 młody przyszedł i pan Lanckoroński.
 </pre>
 
-<p>Tutaj jest jego kod źródłowy:
+<p>Tutaj można zobaczyć kod źródłowy tego programu:
 <a target="_blank" href="https://github.com/turniej/centonista">Centonista (Github)</a>,
-a&nbsp;tutaj można go uruchomić bez&nbsp;instalowania:
+a&nbsp;tutaj można uruchomić ten program i&nbsp;przeczytać zupełnie nowy wiersz:
 <a target="_blank" href="http://turniej.wolnelektury.pl/poezja/centonista/">Centonista (Wolne Lektury)</a></p>
 
 <p>Dwa razy byłem laureatem <a target="_blank"
-href="https://www.ioccc.org/">The International
-Obfuscated C Code Contest</a>, czyli konkursu na&nbsp;najmniej
+                               href="https://www.ioccc.org/">IOCCC</a>.
+  Skrót IOCCC oznacza <i>The International
+Obfuscated C Code Contest</i>, czyli międzynarodowy konkurs na&nbsp;najmniej
 czytelny program napisany&nbsp;w&nbsp;C.</p>
 
-<p>Pierwszy z&nbsp;moich programów, dość przydatny jak&nbsp;na&nbsp;IOCCC,
-zaznacza stronę bierną w&nbsp;tekstach angielskich, na przykład:</p>
+<p>Pierwszy z&nbsp;moich programów
+zaznacza zwroty w&nbsp;stronie biernej w&nbsp;tekstach angielskich, na przykład:</p>
 
 <pre>
 "The Elements of Style" by prof. William
-Strunk, Jr. and E. B. White <span class="red">[is well known]</span>
+Strunk, Jr. and E. B. White <span class="hilite">[is well known]</span>
 for its dislike of the passive voice.
 Direct, vigorous, active constructions
-<span class="red">[were instead recommended]</span> by the authors.
-The development of this program has <span class="red">[been
+<span class="hilite">[were instead recommended]</span> by the authors.
+The development of this program has <span class="hilite">[been
 driven]</span> by this tenet.
 </pre>
 
@@ -259,7 +267,7 @@ które zawierają wszystkie litery danego języka, na&nbsp;przykład:<br>
 Quartz jinx vs fed kc womb glyph</li>
 Stróż pchnął kość w quiz gędźb vel fax myjń</li>
 </pre>
-Tutaj są ich kody źródłowe:
+Tutaj można zobaczyć kody źródłowe tych dwóch programów:
 <a target="_blank"
 href="https://github.com/ioccc-src/winner/tree/master/2018/ciura">2018&nbsp;Ciura (Github)</a>,
 <a target="_blank"
@@ -267,7 +275,7 @@ href="https://github.com/ioccc-src/winner/tree/master/2019/ciura">2019&nbsp;Ciur
 </div>
 
 <div style="display:none">
-<p><pre>Marcin.Ciura@agh.edu.pl</pre></p>
+<p><pre>ｍｃｉｕｒａ＠ ｇｍａｉｌ．ｃｏｍ</pre></p>
 </div>
 </div>
 <pre margin-top="10em">&nbsp;</pre>
